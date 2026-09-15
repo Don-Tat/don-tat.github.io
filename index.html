@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="portrait.css">
+  <link rel="stylesheet" href="earth-theme.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -32,28 +32,35 @@
 
   <main id="main">
     <section class="hero" id="top">
+      <div class="field-index" aria-hidden="true"><span>FIELD / 01</span><span>38.90° N</span></div>
       <div class="hero-copy">
-        <p class="eyebrow"><span class="pulse"></span> Research software engineer · Washington, D.C.</p>
-        <h1>I turn scientific<br><em>complexity</em> into<br>working systems.</h1>
-        <p class="hero-intro">Open-source tools, machine-learning workflows, and high-throughput data systems for materials, mineralogy, and planetary discovery.</p>
+        <p class="eyebrow">Research software engineer · Washington, D.C.</p>
+        <h1>Code for a<br><em>living planet.</em></h1>
+        <p class="hero-intro">I apply computer science and data science to questions in nature, Earth, and planetary systems—building open tools that turn complex scientific data into discovery.</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#work">Explore selected work <span>↓</span></a>
           <a class="button button-ghost" href="assets/Don-Ngo-Resume.pdf" target="_blank" rel="noreferrer">Résumé <span>↗</span></a>
         </div>
+        <div class="hero-methods" aria-label="Core research methods"><span>Machine learning</span><span>Scientific computing</span><span>Geospatial data</span></div>
       </div>
 
-      <figure class="hero-visual">
-        <img class="portrait" src="assets/don-ngo-portrait.jpg" alt="Portrait of Don Ngo outdoors" width="1724" height="1724">
-        <div class="portrait-shade" aria-hidden="true"></div>
-        <svg class="portrait-overlay" viewBox="0 0 600 600" aria-hidden="true">
-          <circle cx="300" cy="300" r="245"/><circle cx="300" cy="300" r="205"/>
-          <path d="M300 36v72M300 492v72M36 300h72M492 300h72"/>
-          <path class="accent-path" d="M54 420 146 347l72 31 117-140 89 52 122-151"/>
-          <circle class="point" cx="146" cy="347" r="5"/><circle class="point" cx="335" cy="238" r="5"/><circle class="point" cx="424" cy="290" r="5"/>
-        </svg>
-        <figcaption class="portrait-caption"><span>DON NGO / 001</span><span>RESEARCH SOFTWARE ENGINEER</span></figcaption>
-        <div class="coordinates"><span>38.9072° N</span><span>077.0369° W</span></div>
-      </figure>
+      <div class="hero-composition">
+        <figure class="profile-card">
+          <img src="assets/don-ngo-portrait.jpg" alt="Portrait of Don Ngo outdoors" width="1724" height="1724">
+          <figcaption><strong>Don Ngo</strong><span>CS × Earth systems</span></figcaption>
+        </figure>
+        <div class="data-card" aria-label="Research domains: lithosphere, biosphere, and data systems">
+          <div class="data-card-head"><span>RESEARCH TERRAIN</span><span>03 DOMAINS</span></div>
+          <svg viewBox="0 0 340 210" aria-hidden="true">
+            <path d="M5 177c42-42 70-35 99-76s74-57 108-25 50 18 123-48"/>
+            <path d="M5 190c48-37 76-24 110-66s67-43 99-16 63 5 121-33"/>
+            <path d="M5 202c59-24 90-13 124-46s56-27 87-7 71 4 119-21"/>
+            <circle cx="105" cy="100" r="5"/><circle cx="212" cy="76" r="5"/><circle cx="286" cy="56" r="5"/>
+          </svg>
+          <div class="domain-labels"><span>LITHOSPHERE</span><span>BIOSPHERE</span><span>DATA SYSTEMS</span></div>
+        </div>
+        <p class="field-note"><span>NOW</span> Research Software Engineer at Carnegie Science’s Earth and Planets Laboratory.</p>
+      </div>
       <div class="scroll-cue" aria-hidden="true">SCROLL TO DISCOVER <span></span></div>
     </section>
 
