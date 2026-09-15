@@ -1,1 +1,168 @@
-"Hello World" 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Don Ngo is a research software engineer and data scientist building open scientific software, machine-learning workflows, and tools for Earth and planetary science.">
+  <meta name="theme-color" content="#08100f">
+  <title>Don Ngo — Research Software Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Don Ngo, home">
+      <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 3 38.45 12.5v19L22 41 5.55 31.5v-19L22 3Z"/><path d="m14 17 8-4.6 8 4.6v9.2l-8 4.6-8-4.6Z"/><circle cx="22" cy="22" r="2.8"/></svg>
+      <span>DON NGO</span>
+    </a>
+    <nav aria-label="Primary navigation">
+      <a href="#work">Work</a>
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+    </nav>
+    <a class="header-cta" href="mailto:dontatngo@gmail.com">Start a conversation <span>↗</span></a>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse"></span> Research software engineer · Washington, D.C.</p>
+        <h1>I turn scientific<br><em>complexity</em> into<br>working systems.</h1>
+        <p class="hero-intro">Open-source tools, machine-learning workflows, and high-throughput data systems for materials, mineralogy, and planetary discovery.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore selected work <span>↓</span></a>
+          <a class="button button-ghost" href="assets/Don-Ngo-Resume.pdf" target="_blank" rel="noreferrer">Résumé <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Interactive diagram connecting Don's research domains">
+        <svg class="orbit-map" viewBox="0 0 600 600" role="img" aria-labelledby="map-title map-desc">
+          <title id="map-title">Don Ngo's research constellation</title>
+          <desc id="map-desc">Scientific software connects machine learning, Earth science, open science, and data systems.</desc>
+          <defs><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
+          <g class="grid-lines"><circle cx="300" cy="300" r="220"/><circle cx="300" cy="300" r="145"/><circle cx="300" cy="300" r="72"/><path d="M300 40v520M40 300h520M116 116l368 368M484 116 116 484"/></g>
+          <g class="connections"><path d="M300 300 167 171M300 300 452 180M300 300 460 407M300 300 174 443"/></g>
+          <g class="core"><polygon points="300,246 347,273 347,327 300,354 253,327 253,273"/><circle cx="300" cy="300" r="15"/><text x="300" y="386">SCIENTIFIC SOFTWARE</text></g>
+          <g class="node n1"><circle cx="167" cy="171" r="8"/><circle cx="167" cy="171" r="23"/><text x="136" y="137">MACHINE</text><text x="136" y="153">LEARNING</text></g>
+          <g class="node n2"><circle cx="452" cy="180" r="8"/><circle cx="452" cy="180" r="23"/><text x="477" y="171">EARTH +</text><text x="477" y="187">PLANETS</text></g>
+          <g class="node n3"><circle cx="460" cy="407" r="8"/><circle cx="460" cy="407" r="23"/><text x="482" y="430">OPEN SCIENCE</text></g>
+          <g class="node n4"><circle cx="174" cy="443" r="8"/><circle cx="174" cy="443" r="23"/><text x="64" y="470">DATA SYSTEMS</text></g>
+        </svg>
+        <div class="coordinates"><span>38.9072° N</span><span>077.0369° W</span></div>
+      </div>
+      <div class="scroll-cue" aria-hidden="true">SCROLL TO DISCOVER <span></span></div>
+    </section>
+
+    <section class="impact-strip" aria-label="Career highlights">
+      <div><strong>1 / 12</strong><span>Selected from 404 applicants<br>for an NSF research fellowship</span></div>
+      <div><strong>1000s</strong><span>Crystal structures processed<br>in reproducible batch workflows</span></div>
+      <div><strong>2</strong><span>Peer-reviewed publications<br>in 2026</span></div>
+      <div><strong>OSPA</strong><span>AGU outstanding student<br>presentation award</span></div>
+    </section>
+
+    <section class="section work" id="work">
+      <div class="section-heading reveal">
+        <p class="eyebrow">01 / Selected work</p>
+        <h2>Tools for discovery,<br>built to be used.</h2>
+        <p>Research becomes more powerful when complex methods become clear, reproducible tools.</p>
+      </div>
+
+      <article class="project project-featured reveal">
+        <div class="project-index">01</div>
+        <div class="project-copy">
+          <div class="project-meta"><span>OPEN-SOURCE R PACKAGE</span><span>2024—NOW</span></div>
+          <h3>crystract</h3>
+          <p class="project-lede">High-throughput crystallographic data processing, from one file at a time to thousands in a reproducible workflow.</p>
+          <p>Led the design and development of an R package for extracting, analyzing, and validating Crystallographic Information Files—complete with uncertainty propagation, bond geometry, and parallel processing.</p>
+          <div class="tags"><span>R</span><span>Parallel computing</span><span>Crystallography</span><span>Open source</span></div>
+          <div class="project-links"><a href="https://cran.r-project.org/package=crystract" target="_blank" rel="noreferrer">View on CRAN ↗</a><a href="https://doi.org/10.21105/joss.09529" target="_blank" rel="noreferrer">Read the paper ↗</a></div>
+        </div>
+        <div class="crystal-card" aria-hidden="true">
+          <svg viewBox="0 0 480 480"><g class="crystal-edges"><path d="m240 55 142 82 0 164-142 82-142-82V137Z"/><path d="m240 55v164m142-82-142 82M98 137l142 82m0 0v164m0-164 142 82m-142-82L98 301"/><circle cx="240" cy="55" r="9"/><circle cx="382" cy="137" r="9"/><circle cx="382" cy="301" r="9"/><circle cx="240" cy="383" r="9"/><circle cx="98" cy="301" r="9"/><circle cx="98" cy="137" r="9"/><circle cx="240" cy="219" r="16"/></g></svg>
+          <div class="crystal-label"><span>CIF / BATCH</span><span>v1.0.2</span></div>
+        </div>
+      </article>
+
+      <div class="project-grid">
+        <article class="project project-small reveal">
+          <div class="project-index">02</div>
+          <div class="project-meta"><span>NETWORK ANALYSIS</span><span>IN DEVELOPMENT</span></div>
+          <div class="mini-visual network" aria-hidden="true"><svg viewBox="0 0 320 170"><g><path d="M36 103 94 55l64 50 60-72 67 81M94 55l14 93m50-43 45 43m15-115 0 97M36 103l72 45 95 0 82-34"/><circle cx="36" cy="103" r="7"/><circle cx="94" cy="55" r="11"/><circle cx="108" cy="148" r="6"/><circle cx="158" cy="105" r="13"/><circle cx="218" cy="33" r="8"/><circle cx="218" cy="130" r="10"/><circle cx="203" cy="148" r="6"/><circle cx="285" cy="114" r="12"/></g></svg></div>
+          <h3>MiNE</h3>
+          <p>A low-code mineral network explorer for preprocessing, graph visualization, community detection, and network metrics.</p>
+          <div class="tags"><span>React</span><span>Networks</span><span>Data viz</span></div>
+        </article>
+        <article class="project project-small reveal">
+          <div class="project-index">03</div>
+          <div class="project-meta"><span>GEOSPATIAL ML</span><span>IN DEVELOPMENT</span></div>
+          <div class="mini-visual terrain" aria-hidden="true"><svg viewBox="0 0 320 170"><path d="m0 145 62-58 42 28 54-77 55 58 37-34 70 83"/><path d="m0 164 62-58 42 28 54-77 55 58 37-34 70 83"/><circle cx="158" cy="57" r="6"/><circle cx="62" cy="106" r="5"/><circle cx="250" cy="81" r="5"/></svg></div>
+          <h3>Mineral Predictive Mapping</h3>
+          <p>Association-rule and machine-learning workflows that surface high-probability mineral occurrences from regional evidence.</p>
+          <div class="tags"><span>Python</span><span>Apriori</span><span>Geospatial</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section research" id="research">
+      <div class="section-heading reveal">
+        <p class="eyebrow">02 / Research record</p>
+        <h2>Published in the open.</h2>
+      </div>
+      <div class="publications reveal">
+        <a class="publication" href="https://doi.org/10.21105/joss.09529" target="_blank" rel="noreferrer">
+          <span class="pub-year">2026</span><span class="pub-body"><strong>crystract: A Crystallography Package in R for .cif Data Processing</strong><small>Journal of Open Source Software · Ngo, Hübner, Spintzer, Morrison & Prabhu</small></span><span class="pub-arrow">↗</span>
+        </a>
+        <a class="publication" href="https://doi.org/10.1093/pnasnexus/pgag215" target="_blank" rel="noreferrer">
+          <span class="pub-year">2026</span><span class="pub-body"><strong>Mineral biosignature identification from Raman spectroscopy using machine learning</strong><small>PNAS Nexus · Li, Prabhu, Hou, Wong, Xing, Ngo, Xu & Hazen</small></span><span class="pub-arrow">↗</span>
+        </a>
+        <div class="publication">
+          <span class="pub-year">2026</span><span class="pub-body"><strong>Crystract in Action: Advanced CIF Batch Processing for Structural Analysis</strong><small>Journal of Applied Crystallography · Manuscript in review</small></span><span class="pub-status">IN REVIEW</span>
+        </div>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-title">FIELD NOTES</div>
+        <div class="timeline-track">
+          <div class="time-item"><span>2021</span><strong>Computer Science + Mathematics</strong><small>Hood College</small></div>
+          <div class="time-item"><span>2024</span><strong>NSF EPIIC Research Intern</strong><small>Carnegie Science</small></div>
+          <div class="time-item"><span>2025</span><strong>Research Software Engineer</strong><small>Carnegie Science</small></div>
+          <div class="time-item accent"><span>NOW</span><strong>Building research infrastructure</strong><small>for data-intensive discovery</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="about-intro reveal">
+        <p class="eyebrow">03 / Approach</p>
+        <blockquote>“He was not only writing code that worked, but also thinking critically about software architecture, algorithmic design, data quality, and reproducibility.”</blockquote>
+        <p class="attribution">— Dr. Julia-Maria Hübner, TU Dresden</p>
+      </div>
+      <div class="about-copy reveal">
+        <p>My work lives where scientific questions meet engineered systems. I learn the domain, find the structure inside the complexity, and build tools that let researchers move faster without sacrificing rigor.</p>
+        <p>At Carnegie Science’s Earth and Planets Laboratory, I collaborate across mineralogy, crystallography, geoscience, and planetary science—translating research questions into reliable, interpretable software.</p>
+        <div class="capabilities">
+          <div><span>01</span><strong>Scientific computing</strong><small>Numerical methods · geometry · uncertainty</small></div>
+          <div><span>02</span><strong>Machine learning</strong><small>Prediction · clustering · classification</small></div>
+          <div><span>03</span><strong>Data systems</strong><small>Pipelines · databases · high throughput</small></div>
+          <div><span>04</span><strong>Research interfaces</strong><small>Visualization · web apps · reproducibility</small></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact reveal">
+      <p class="eyebrow">Open to ambitious research</p>
+      <h2>Have a hard problem?</h2>
+      <a href="mailto:dontatngo@gmail.com">Let’s make it tractable. <span>↗</span></a>
+      <div class="contact-links"><a href="https://github.com/Don-Tat" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://linkedin.com/in/don-tat-ngo" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://orcid.org/0009-0001-2779-2146" target="_blank" rel="noreferrer">ORCID ↗</a></div>
+    </section>
+  </main>
+
+  <footer><span>© <span id="year"></span> Don Ngo</span><span>Research software for scientific discovery.</span><a href="#top">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
