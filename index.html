@@ -94,17 +94,21 @@
         </div>
       </article>
 
-      <div class="project-grid">
-        <article class="project project-small reveal">
-          <div class="project-index">02</div>
+      <article class="project project-featured project-mine reveal">
+        <div class="project-index">02</div>
+        <div class="project-copy">
           <div class="project-meta"><span>NETWORK ANALYSIS</span><span>IN DEVELOPMENT</span></div>
-          <div class="mini-visual network" aria-hidden="true"><svg viewBox="0 0 320 170"><g><path d="M36 103 94 55l64 50 60-72 67 81M94 55l14 93m50-43 45 43m15-115 0 97M36 103l72 45 95 0 82-34"/><circle cx="36" cy="103" r="7"/><circle cx="94" cy="55" r="11"/><circle cx="108" cy="148" r="6"/><circle cx="158" cy="105" r="13"/><circle cx="218" cy="33" r="8"/><circle cx="218" cy="130" r="10"/><circle cx="203" cy="148" r="6"/><circle cx="285" cy="114" r="12"/></g></svg></div>
           <h3>MiNE</h3>
-          <p>An interactive network visualization and analysis workspace for scientific data, with browser and cloud computation, community detection, network metrics, and multiple rendering modes.</p>
-          <div class="tags"><span>React</span><span>Networks</span><span>Data viz</span></div>
+          <p class="project-lede">An interactive network visualization and analysis workspace built for exploring complex scientific data.</p>
+          <p>MiNE brings browser and cloud computation, community detection, network metrics, and multiple rendering modes into one research-ready environment.</p>
+          <div class="tags"><span>React</span><span>Networks</span><span>Data visualization</span><span>Scientific computing</span></div>
           <div class="project-links"><a href="https://prabhulab.github.io/MiNE/" target="_blank" rel="noreferrer">Open MiNE ↗</a><a href="https://github.com/PrabhuLab/MiNE" target="_blank" rel="noreferrer">View source ↗</a></div>
-        </article>
-        <article class="project project-small reveal">
+        </div>
+        <div class="mine-card network" aria-hidden="true"><svg viewBox="0 0 420 280"><g><path d="M42 166 117 72l88 95 78-118 95 137M117 72l18 168m70-73 58 73m20-191 0 153M42 166l93 74 128 0 115-54"/><circle cx="42" cy="166" r="9"/><circle cx="117" cy="72" r="15"/><circle cx="135" cy="240" r="8"/><circle cx="205" cy="167" r="18"/><circle cx="283" cy="49" r="11"/><circle cx="283" cy="202" r="14"/><circle cx="263" cy="240" r="8"/><circle cx="378" cy="186" r="16"/></g></svg><div class="mine-label"><span>COMMUNITIES / METRICS</span><span>INTERACTIVE</span></div></div>
+      </article>
+
+      <div class="project-grid project-grid-secondary">
+        <article class="project project-small project-mineral reveal">
           <div class="project-index">03</div>
           <div class="project-meta"><span>GEOSPATIAL ML</span><span>IN DEVELOPMENT</span></div>
           <div class="mini-visual terrain" aria-hidden="true"><svg viewBox="0 0 320 170"><path d="m0 145 62-58 42 28 54-77 55 58 37-34 70 83"/><path d="m0 164 62-58 42 28 54-77 55 58 37-34 70 83"/><circle cx="158" cy="57" r="6"/><circle cx="62" cy="106" r="5"/><circle cx="250" cy="81" r="5"/></svg></div>
@@ -112,13 +116,12 @@
           <p>Association-rule and machine-learning workflows that surface high-probability mineral occurrences from regional evidence.</p>
           <div class="tags"><span>Python</span><span>Apriori</span><span>Geospatial</span></div>
         </article>
-        <article class="project project-hockey reveal">
+        <article class="project project-small project-undergrad project-hockey reveal">
           <div class="project-index">04</div>
           <div class="project-copy">
             <div class="project-meta"><span>SPORTS DATA SCIENCE</span><span>2024—2025</span></div>
             <h3>Hood Hockey Analytics</h3>
-            <p class="project-lede">A full-stack visualization and predictive-analytics platform designed for Hood College Women’s Ice Hockey.</p>
-            <p>Built with a team to transform player and team data into interactive performance trends, comparisons, heatmaps, and forecasting tools for coaches and analysts.</p>
+            <p>A team-built visualization and predictive-analytics platform for Hood College Women’s Ice Hockey.</p>
             <div class="tags"><span>Django</span><span>React</span><span>PostgreSQL</span><span>Scikit-learn</span></div>
             <div class="project-links"><a href="https://github.com/sarahsetiawan/Hood-Hockey" target="_blank" rel="noreferrer">View repository ↗</a></div>
           </div>
@@ -131,23 +134,21 @@
             <div class="rink-label"><span>PLAYER PERFORMANCE</span><span>MODEL / VISUALIZE / COMPARE</span></div>
           </div>
         </article>
-        <article class="project project-movie reveal">
+        <article class="project project-small project-undergrad project-movie reveal">
           <div class="project-index">05</div>
           <div class="mini-visual recommendation" aria-hidden="true">
-            <div class="recommendation-head"><span>SIMILARITY MATRIX</span><span>10K+ TITLES</span></div>
-            <div class="matrix">
-              <span style="--score:.92"></span><span style="--score:.34"></span><span style="--score:.61"></span><span style="--score:.18"></span><span style="--score:.73"></span><span style="--score:.45"></span>
-              <span style="--score:.28"></span><span style="--score:.84"></span><span style="--score:.49"></span><span style="--score:.66"></span><span style="--score:.21"></span><span style="--score:.57"></span>
-              <span style="--score:.51"></span><span style="--score:.24"></span><span style="--score:.96"></span><span style="--score:.42"></span><span style="--score:.69"></span><span style="--score:.31"></span>
-              <span style="--score:.17"></span><span style="--score:.64"></span><span style="--score:.38"></span><span style="--score:.88"></span><span style="--score:.52"></span><span style="--score:.76"></span>
+            <div class="recommendation-head"><span>FOR YOU</span><span>10K+ TITLES</span></div>
+            <div class="recommendation-list">
+              <div><span>01</span><i style="--match:92%"></i><strong>92%</strong></div>
+              <div><span>02</span><i style="--match:78%"></i><strong>78%</strong></div>
+              <div><span>03</span><i style="--match:64%"></i><strong>64%</strong></div>
             </div>
-            <div class="recommendation-axis"><span>OVERVIEW</span><span>KEYWORDS</span><span>WATCHLIST</span></div>
+            <div class="recommendation-axis"><span>CONTENT SIMILARITY</span><span>WATCHLIST</span></div>
           </div>
           <div class="project-copy">
             <div class="project-meta"><span>RECOMMENDER SYSTEM</span><span>FULL STACK</span></div>
             <h3>Movie Recommendation System</h3>
-            <p class="project-lede">Personalized movie discovery using content similarity, watchlist behavior, and data from more than 10,000 titles.</p>
-            <p>Built a Flask and React application that combines movie overviews and keywords to generate recommendations, with TMDb integration and persistent SQLite storage.</p>
+            <p>Personalized movie discovery using content similarity, watchlist behavior, and more than 10,000 titles.</p>
             <div class="tags"><span>Python</span><span>Flask</span><span>React</span><span>Scikit-learn</span><span>SQLite</span></div>
             <div class="project-links"><a href="https://github.com/Don-Tat/movie-recommendation" target="_blank" rel="noreferrer">View repository ↗</a></div>
           </div>

@@ -214,20 +214,62 @@ body {
 .crystal-edges circle { stroke: #d4df89; }
 .crystal-edges circle:last-child { fill: #d4df89; }
 
-.project-hockey {
-  grid-column: 1 / -1;
+.project-mine {
+  margin-top: 1rem;
+  padding-top: 4.5rem;
+}
+
+.mine-card {
+  min-height: 440px;
   display: grid;
-  grid-template-columns: 50px minmax(320px, .9fr) minmax(320px, 1.1fr);
-  gap: 3rem;
-  padding: 3rem 0 4rem;
+  place-items: center;
+  position: relative;
+  background: linear-gradient(145deg, rgba(117,174,181,.2), rgba(200,137,87,.08));
+  border: 1px solid rgba(243,240,229,.12);
+}
+
+.mine-card svg { width: 82%; overflow: visible; }
+.mine-label {
+  position: absolute;
+  left: 1.2rem;
+  right: 1.2rem;
+  bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  color: #a9b9b0;
+  font: 400 .58rem var(--mono);
+  letter-spacing: .08em;
+}
+
+.project-grid-secondary {
+  grid-template-columns: 2fr 1fr 1fr;
   border-bottom: 1px solid var(--line);
 }
 
+.project-grid-secondary .project-small {
+  min-width: 0;
+  padding: 2.5rem clamp(1.25rem, 2.2vw, 2.5rem) 3rem;
+  border-right: 1px solid var(--line);
+}
+
+.project-grid-secondary .project-small:last-child { border-right: 0; }
+.project-grid-secondary .project-index {
+  position: static;
+  display: block;
+  margin-bottom: 1.25rem;
+}
+
+.project-undergrad h3 { font-size: clamp(1.7rem, 2.4vw, 2.7rem); }
+.project-undergrad p { font-size: .9rem; line-height: 1.65; }
+.project-undergrad .tags { margin-top: 1.25rem; }
+.project-undergrad .tags span { font-size: .56rem; }
+.project-undergrad .project-links { margin-top: 1.5rem; }
+
 .project-hockey .mini-visual {
-  height: auto;
-  min-height: 310px;
+  height: 150px;
+  min-height: 0;
   margin: 0;
-  padding: 2rem;
+  padding: 1rem;
   background: rgba(117,174,181,.1);
   position: relative;
 }
@@ -247,19 +289,15 @@ body {
 }
 
 .project-movie {
-  grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: 50px minmax(320px, 1.1fr) minmax(320px, .9fr);
-  gap: 3rem;
-  padding: 4rem 0;
-  border-bottom: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
 }
 
 .project-movie .mini-visual {
-  height: auto;
-  min-height: 330px;
-  margin: 0;
-  padding: 1.4rem;
+  height: 150px;
+  min-height: 0;
+  margin: 0 0 2rem;
+  padding: 1rem;
   background: #397173;
   display: flex;
   flex-direction: column;
@@ -274,18 +312,31 @@ body {
   letter-spacing: .08em;
 }
 
-.matrix {
+.recommendation-list {
   flex: 1;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 7px;
-  margin: 1.5rem 0;
+  align-content: center;
+  gap: .7rem;
+  margin: .9rem 0;
 }
 
-.matrix span {
-  background: rgba(212,223,137,var(--score));
-  border: 1px solid rgba(243,240,229,.13);
-  min-height: 38px;
+.recommendation-list div {
+  display: grid;
+  grid-template-columns: 20px 1fr 30px;
+  gap: .6rem;
+  align-items: center;
+  color: #d7e2dc;
+  font: 400 .52rem var(--mono);
+}
+
+.recommendation-list i {
+  height: 3px;
+  background: linear-gradient(90deg, #d4df89 var(--match), rgba(243,240,229,.14) var(--match));
+}
+
+.recommendation-list strong {
+  font: 400 .52rem var(--mono);
+  text-align: right;
 }
 
 .recommendation-axis { color: #a9c8c7; }
@@ -379,11 +430,9 @@ body {
   .hero-composition { grid-column: 2; grid-template-columns: minmax(210px, 290px) 1fr; padding-left: clamp(2rem, 5vw, 6rem); }
   .hero-copy { padding-bottom: 3rem; }
   .scroll-cue { display: none; }
-  .project-hockey { grid-template-columns: 40px 1fr; }
-  .project-hockey .mini-visual { grid-column: 2; }
-  .project-movie { grid-template-columns: 40px 1fr; }
-  .project-movie .mini-visual { grid-column: 2; grid-row: 2; }
-  .project-movie .project-copy { grid-column: 2; grid-row: 1; }
+  .mine-card { grid-column: 2; min-height: 380px; }
+  .project-grid-secondary { grid-template-columns: 1fr 1fr; }
+  .project-mineral { grid-column: 1 / -1; }
 }
 
 @media (max-width: 700px) {
@@ -397,11 +446,11 @@ body {
   .profile-card { max-width: 230px; }
   .data-card { min-height: 220px; }
   .data-card-head span:last-child { display: none; }
-  .project-hockey { grid-template-columns: 1fr; gap: 1rem; }
-  .project-hockey .mini-visual { grid-column: 1; min-height: 260px; }
-  .project-movie { grid-template-columns: 1fr; gap: 1rem; }
-  .project-movie .project-copy { grid-column: 1; grid-row: auto; }
-  .project-movie .mini-visual { grid-column: 1; grid-row: auto; min-height: 260px; }
+  .mine-card { grid-column: 1; min-height: 300px; }
+  .project-grid-secondary { grid-template-columns: 1fr; }
+  .project-mineral { grid-column: 1; }
+  .project-grid-secondary .project-small { border-right: 0; }
+  .project-undergrad .mini-visual { height: 170px; }
   .about-intro blockquote { line-height: 1.25; }
   .back-to-top { width: 54px; height: 54px; }
 }
