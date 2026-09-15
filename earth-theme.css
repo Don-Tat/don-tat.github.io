@@ -205,6 +205,38 @@ body {
 .crystal-edges circle { stroke: #d4df89; }
 .crystal-edges circle:last-child { fill: #d4df89; }
 
+.project-hockey {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 50px minmax(320px, .9fr) minmax(320px, 1.1fr);
+  gap: 3rem;
+  padding: 3rem 0 4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-hockey .mini-visual {
+  height: auto;
+  min-height: 310px;
+  margin: 0;
+  padding: 2rem;
+  background: rgba(117,174,181,.1);
+  position: relative;
+}
+
+.hockey svg { stroke: #a9c8c7; fill: none; stroke-width: 1.2; }
+.hockey .hockey-data circle { fill: #d4df89; stroke: var(--ink); stroke-width: 2; }
+.rink-label {
+  position: absolute;
+  left: 1rem;
+  right: 1rem;
+  bottom: .8rem;
+  display: flex;
+  justify-content: space-between;
+  color: #a9b9b0;
+  font: 400 .55rem var(--mono);
+  letter-spacing: .08em;
+}
+
 .research { background: #e8eadc; }
 .research .eyebrow { color: #397173; }
 .time-item.accent { background: #cbd884; }
@@ -229,6 +261,8 @@ body {
   .hero-composition { grid-column: 2; grid-template-columns: minmax(210px, 290px) 1fr; padding-left: clamp(2rem, 5vw, 6rem); }
   .hero-copy { padding-bottom: 3rem; }
   .scroll-cue { display: none; }
+  .project-hockey { grid-template-columns: 40px 1fr; }
+  .project-hockey .mini-visual { grid-column: 2; }
 }
 
 @media (max-width: 700px) {
@@ -242,6 +276,8 @@ body {
   .profile-card { max-width: 230px; }
   .data-card { min-height: 220px; }
   .data-card-head span:last-child { display: none; }
+  .project-hockey { grid-template-columns: 1fr; gap: 1rem; }
+  .project-hockey .mini-visual { grid-column: 1; min-height: 260px; }
 }
 
 @media (max-width: 480px) {
