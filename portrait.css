@@ -1,0 +1,99 @@
+.hero-visual {
+  margin: 0;
+  background: #101b17;
+  isolation: isolate;
+}
+
+.portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(.72) contrast(1.06);
+  transition: filter .7s ease, transform 1.2s cubic-bezier(.2, .7, .2, 1);
+}
+
+.hero-visual:hover .portrait {
+  filter: saturate(1) contrast(1.02);
+  transform: scale(1.018);
+}
+
+.portrait-shade {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(180deg, rgba(8,16,15,.08), transparent 40%, rgba(8,16,15,.82)), linear-gradient(90deg, rgba(8,16,15,.3), transparent 45%);
+  mix-blend-mode: multiply;
+}
+
+.portrait-overlay {
+  width: 86%;
+  position: relative;
+  z-index: 2;
+  overflow: visible;
+  fill: none;
+  stroke: rgba(199,255,61,.42);
+  stroke-width: 1;
+  pointer-events: none;
+  transition: transform .25s ease-out;
+}
+
+.portrait-overlay .accent-path {
+  stroke: var(--aqua);
+  stroke-dasharray: 4 8;
+}
+
+.portrait-overlay .point {
+  fill: var(--lime);
+  stroke: none;
+  filter: drop-shadow(0 0 8px var(--lime));
+}
+
+.portrait-caption {
+  position: absolute;
+  z-index: 3;
+  left: 2rem;
+  right: 4rem;
+  bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--paper);
+  font: 400 .65rem var(--mono);
+  letter-spacing: .1em;
+}
+
+.portrait-caption span:last-child { color: var(--lime); }
+
+.hero-visual .coordinates {
+  z-index: 3;
+  right: 1.25rem;
+  top: 2rem;
+  bottom: auto;
+  color: rgba(238,240,232,.72);
+}
+
+@media (max-width: 1050px) {
+  .hero-visual { min-height: 72vh; }
+}
+
+@media (max-width: 700px) {
+  .hero-visual { min-height: 540px; }
+  .portrait { object-position: center 42%; }
+  .portrait-overlay { width: 105%; }
+  .portrait-caption {
+    left: 1.2rem;
+    right: 2.8rem;
+    bottom: 1.2rem;
+    flex-direction: column;
+    gap: .25rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portrait,
+  .portrait-overlay { transition: none; }
+  .hero-visual:hover .portrait { transform: none; }
+}

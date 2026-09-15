@@ -12,16 +12,13 @@ const observer = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
 if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  const map = document.querySelector('.orbit-map');
-  const nodes = document.querySelectorAll('.node');
-  map?.addEventListener('pointermove', (event) => {
-    const box = map.getBoundingClientRect();
+  const portrait = document.querySelector('.hero-visual');
+  const overlay = document.querySelector('.portrait-overlay');
+  portrait?.addEventListener('pointermove', (event) => {
+    const box = portrait.getBoundingClientRect();
     const x = (event.clientX - box.left) / box.width - 0.5;
     const y = (event.clientY - box.top) / box.height - 0.5;
-    nodes.forEach((node, index) => {
-      const depth = (index + 1) * 1.7;
-      node.style.transform = `translate(${x * depth}px, ${y * depth}px)`;
-    });
+    overlay.style.transform = `translate(${x * 8}px, ${y * 8}px)`;
   });
-  map?.addEventListener('pointerleave', () => nodes.forEach((node) => node.style.transform = ''));
+  portrait?.addEventListener('pointerleave', () => { overlay.style.transform = ''; });
 }

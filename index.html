@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="portrait.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -41,21 +42,18 @@
         </div>
       </div>
 
-      <div class="hero-visual" aria-label="Interactive diagram connecting Don's research domains">
-        <svg class="orbit-map" viewBox="0 0 600 600" role="img" aria-labelledby="map-title map-desc">
-          <title id="map-title">Don Ngo's research constellation</title>
-          <desc id="map-desc">Scientific software connects machine learning, Earth science, open science, and data systems.</desc>
-          <defs><filter id="glow"><feGaussianBlur stdDeviation="5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs>
-          <g class="grid-lines"><circle cx="300" cy="300" r="220"/><circle cx="300" cy="300" r="145"/><circle cx="300" cy="300" r="72"/><path d="M300 40v520M40 300h520M116 116l368 368M484 116 116 484"/></g>
-          <g class="connections"><path d="M300 300 167 171M300 300 452 180M300 300 460 407M300 300 174 443"/></g>
-          <g class="core"><polygon points="300,246 347,273 347,327 300,354 253,327 253,273"/><circle cx="300" cy="300" r="15"/><text x="300" y="386">SCIENTIFIC SOFTWARE</text></g>
-          <g class="node n1"><circle cx="167" cy="171" r="8"/><circle cx="167" cy="171" r="23"/><text x="136" y="137">MACHINE</text><text x="136" y="153">LEARNING</text></g>
-          <g class="node n2"><circle cx="452" cy="180" r="8"/><circle cx="452" cy="180" r="23"/><text x="477" y="171">EARTH +</text><text x="477" y="187">PLANETS</text></g>
-          <g class="node n3"><circle cx="460" cy="407" r="8"/><circle cx="460" cy="407" r="23"/><text x="482" y="430">OPEN SCIENCE</text></g>
-          <g class="node n4"><circle cx="174" cy="443" r="8"/><circle cx="174" cy="443" r="23"/><text x="64" y="470">DATA SYSTEMS</text></g>
+      <figure class="hero-visual">
+        <img class="portrait" src="assets/don-ngo-portrait.jpg" alt="Portrait of Don Ngo outdoors" width="1724" height="1724">
+        <div class="portrait-shade" aria-hidden="true"></div>
+        <svg class="portrait-overlay" viewBox="0 0 600 600" aria-hidden="true">
+          <circle cx="300" cy="300" r="245"/><circle cx="300" cy="300" r="205"/>
+          <path d="M300 36v72M300 492v72M36 300h72M492 300h72"/>
+          <path class="accent-path" d="M54 420 146 347l72 31 117-140 89 52 122-151"/>
+          <circle class="point" cx="146" cy="347" r="5"/><circle class="point" cx="335" cy="238" r="5"/><circle class="point" cx="424" cy="290" r="5"/>
         </svg>
+        <figcaption class="portrait-caption"><span>DON NGO / 001</span><span>RESEARCH SOFTWARE ENGINEER</span></figcaption>
         <div class="coordinates"><span>38.9072° N</span><span>077.0369° W</span></div>
-      </div>
+      </figure>
       <div class="scroll-cue" aria-hidden="true">SCROLL TO DISCOVER <span></span></div>
     </section>
 
