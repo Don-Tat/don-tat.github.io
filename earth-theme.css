@@ -286,8 +286,22 @@ body {
 .time-item.accent { background: #cbd884; }
 
 .about { background: #173c32; }
+.about-intro {
+  min-width: 0;
+  overflow: visible;
+}
+.about-intro blockquote {
+  font-size: clamp(2rem, 3.35vw, 3.9rem);
+  line-height: 1.22;
+  padding-bottom: .16em;
+  overflow: visible;
+}
 .about .eyebrow,
 .attribution { color: #a9c8c7; }
+.attribution {
+  margin-top: 2.25rem;
+  line-height: 1.5;
+}
 .capabilities span { color: #d4df89; }
 
 .contact {
@@ -328,6 +342,7 @@ body {
   .project-movie { grid-template-columns: 1fr; gap: 1rem; }
   .project-movie .project-copy { grid-column: 1; grid-row: auto; }
   .project-movie .mini-visual { grid-column: 1; grid-row: auto; min-height: 260px; }
+  .about-intro blockquote { line-height: 1.25; }
 }
 
 @media (max-width: 480px) {
