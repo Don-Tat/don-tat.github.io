@@ -6,6 +6,18 @@
   <meta name="description" content="Don Ngo is a research software engineer and data scientist building open software, machine-learning workflows, and data systems for scientific discovery.">
   <meta name="theme-color" content="#08100f">
   <title>Don Ngo — Research Software Engineer</title>
+  <link rel="canonical" href="https://don-tat.github.io/">
+  <meta property="og:title" content="Don Ngo — Code for discovery">
+  <meta property="og:description" content="Research software, scientific computing, and data science for discovery across disciplines.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://don-tat.github.io/">
+  <meta property="og:image" content="https://don-tat.github.io/assets/don-ngo-portrait.jpg">
+  <meta property="og:image:alt" content="Don Ngo outdoors">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Don Ngo — Code for discovery">
+  <meta name="twitter:description" content="Research software, scientific computing, and data science for discovery across disciplines.">
+  <meta name="twitter:image" content="https://don-tat.github.io/assets/don-ngo-portrait.jpg">
+  <meta name="twitter:image:alt" content="Don Ngo outdoors">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,17 +34,20 @@
       <svg viewBox="0 0 44 44" aria-hidden="true"><path d="M22 3 38.45 12.5v19L22 41 5.55 31.5v-19L22 3Z"/><path d="m14 17 8-4.6 8 4.6v9.2l-8 4.6-8-4.6Z"/><circle cx="22" cy="22" r="2.8"/></svg>
       <span>DON NGO</span>
     </a>
-    <nav aria-label="Primary navigation">
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" hidden>Menu <span aria-hidden="true">≡</span></button>
+    <nav id="primary-nav" aria-label="Primary navigation">
       <a href="#work">Work</a>
       <a href="#research">Research</a>
       <a href="#about">About</a>
+      <a class="mobile-resume" href="assets/Don-Ngo-Resume.pdf" target="_blank" rel="noreferrer">Résumé ↗</a>
+      <a href="#contact">Contact</a>
     </nav>
     <a class="header-cta" href="mailto:dontatngo@gmail.com">Start a conversation <span>↗</span></a>
   </header>
 
   <main id="main">
     <section class="hero" id="top">
-      <div class="field-index" aria-hidden="true"><span>FIELD / 01</span><span>38.90° N</span></div>
+      <div class="field-index" aria-hidden="true"></div>
       <div class="hero-copy">
         <p class="eyebrow">Research software engineer · Washington, D.C.</p>
         <h1>Code for<br><em>discovery.</em></h1>
@@ -50,7 +65,6 @@
           <figcaption><strong>Don Ngo</strong><span>CS × Scientific discovery</span></figcaption>
         </figure>
         <div class="data-card" aria-label="Research interests across physical, planetary, and data-intensive sciences">
-          <div class="data-card-head"><span>DISCOVERY SPACE</span><span>MANY DOMAINS</span></div>
           <svg viewBox="0 0 340 210" aria-hidden="true">
             <path d="M5 177c42-42 70-35 99-76s74-57 108-25 50 18 123-48"/>
             <path d="M5 190c48-37 76-24 110-66s67-43 99-16 63 5 121-33"/>
@@ -61,7 +75,6 @@
         </div>
         <p class="field-note"><span>NOW</span> Research Software Engineer at Carnegie Science’s Earth and Planets Laboratory.</p>
       </div>
-      <div class="scroll-cue" aria-hidden="true">SCROLL TO DISCOVER <span></span></div>
     </section>
 
     <section class="impact-strip" aria-label="Career highlights">
@@ -86,11 +99,13 @@
           <p class="project-lede">High-throughput crystallographic data processing, from one file at a time to thousands in a reproducible workflow.</p>
           <p>Led the design and development of an R package for extracting, analyzing, and validating Crystallographic Information Files—complete with uncertainty propagation, bond geometry, and parallel processing.</p>
           <div class="tags"><span>R</span><span>Parallel computing</span><span>Crystallography</span><span>Open source</span></div>
-          <div class="project-links"><a href="https://cran.r-project.org/package=crystract" target="_blank" rel="noreferrer">View on CRAN ↗</a><a href="https://doi.org/10.21105/joss.09529" target="_blank" rel="noreferrer">Read the paper ↗</a></div>
+          <p class="project-evidence">Available on CRAN · Published in JOSS · Reproducible batch workflows for thousands of CIFs.</p>
+          <div class="project-links"><a href="https://cran.r-project.org/package=crystract" target="_blank" rel="noreferrer">View on CRAN ↗</a><a href="https://doi.org/10.21105/joss.09529" target="_blank" rel="noreferrer">Read the JOSS paper ↗</a></div>
         </div>
         <div class="crystal-card" aria-hidden="true">
           <svg viewBox="0 0 480 480"><g class="crystal-edges"><path d="m240 55 142 82 0 164-142 82-142-82V137Z"/><path d="m240 55v164m142-82-142 82M98 137l142 82m0 0v164m0-164 142 82m-142-82L98 301"/><circle cx="240" cy="55" r="9"/><circle cx="382" cy="137" r="9"/><circle cx="382" cy="301" r="9"/><circle cx="240" cy="383" r="9"/><circle cx="98" cy="301" r="9"/><circle cx="98" cy="137" r="9"/><circle cx="240" cy="219" r="16"/></g></svg>
-          <div class="crystal-label"><span>CIF / BATCH</span><span>v1.0.2</span></div>
+          <div class="artifact-flow"><span>CIF files</span><span aria-hidden="true">→</span><span>Geometry + uncertainty</span><span aria-hidden="true">→</span><span>Batch analysis</span></div>
+          <div class="crystal-label"><span>Processing schematic</span><span>v1.0.2</span></div>
         </div>
       </article>
 
@@ -100,11 +115,20 @@
           <div class="project-meta"><span>NETWORK ANALYSIS</span><span>IN DEVELOPMENT</span></div>
           <h3>MiNE</h3>
           <p class="project-lede">An interactive network visualization and analysis workspace built for exploring complex scientific data.</p>
-          <p>MiNE brings browser and cloud computation, community detection, network metrics, and multiple rendering modes into one research-ready environment.</p>
+          <p>MiNE brings browser and cloud computation, community detection, network metrics, and multiple rendering modes into one workspace—making scientific networks easier to explore and analyze.</p>
           <div class="tags"><span>React</span><span>Networks</span><span>Data visualization</span><span>Scientific computing</span></div>
           <div class="project-links"><a href="https://prabhulab.github.io/MiNE/" target="_blank" rel="noreferrer">Open MiNE ↗</a><a href="https://github.com/PrabhuLab/MiNE" target="_blank" rel="noreferrer">View source ↗</a></div>
         </div>
-        <div class="mine-card network" aria-hidden="true"><svg viewBox="0 0 420 280"><g><path d="M42 166 117 72l88 95 78-118 95 137M117 72l18 168m70-73 58 73m20-191 0 153M42 166l93 74 128 0 115-54"/><circle cx="42" cy="166" r="9"/><circle cx="117" cy="72" r="15"/><circle cx="135" cy="240" r="8"/><circle cx="205" cy="167" r="18"/><circle cx="283" cy="49" r="11"/><circle cx="283" cy="202" r="14"/><circle cx="263" cy="240" r="8"/><circle cx="378" cy="186" r="16"/></g></svg><div class="mine-label"><span>COMMUNITIES / METRICS</span><span>INTERACTIVE</span></div></div>
+        <div class="mine-card network" aria-hidden="true">
+          <svg viewBox="0 0 420 280" aria-hidden="true">
+            <ellipse class="network-community-a" cx="104" cy="130" rx="83" ry="100"/>
+            <ellipse class="network-community-b" cx="310" cy="151" rx="87" ry="101"/>
+            <g><path d="M52 100 115 58 158 144 88 204 52 100 158 144M115 58 88 204M158 144 258 113M258 113 326 71 370 174 294 226 258 113 370 174M326 71 294 226"/>
+            <circle cx="52" cy="100" r="8"/><circle cx="115" cy="58" r="11"/><circle cx="158" cy="144" r="16"/><circle cx="88" cy="204" r="10"/>
+            <circle cx="258" cy="113" r="16"/><circle cx="326" cy="71" r="10"/><circle cx="370" cy="174" r="12"/><circle cx="294" cy="226" r="8"/></g>
+          </svg>
+          <div class="mine-label"><span>Community structure · schematic</span></div>
+        </div>
       </article>
 
       <div class="project-grid project-grid-secondary">
@@ -115,7 +139,9 @@
           <h3>Mineral Predictive Mapping</h3>
           <p>Association-rule and machine-learning workflows that surface high-probability mineral occurrences from regional evidence.</p>
           <div class="tags"><span>Python</span><span>Apriori</span><span>Geospatial</span></div>
+          <p class="project-status">Current research — code and results forthcoming.</p>
         </article>
+        <h3 class="earlier-heading">Earlier / additional work</h3>
         <article class="project project-small project-undergrad project-hockey reveal">
           <div class="project-index">04</div>
           <div class="project-copy">
@@ -131,19 +157,17 @@
               <path d="M210 18v204M18 120h384"/><circle cx="210" cy="120" r="38"/><circle cx="96" cy="120" r="27"/><circle cx="324" cy="120" r="27"/>
               <g class="hockey-data"><circle cx="71" cy="88" r="6"/><circle cx="132" cy="151" r="9"/><circle cx="187" cy="102" r="5"/><circle cx="249" cy="76" r="8"/><circle cx="291" cy="138" r="11"/><circle cx="351" cy="102" r="5"/></g>
             </svg>
-            <div class="rink-label"><span>PLAYER PERFORMANCE</span><span>MODEL / VISUALIZE / COMPARE</span></div>
           </div>
         </article>
         <article class="project project-small project-undergrad project-movie reveal">
           <div class="project-index">05</div>
           <div class="mini-visual recommendation" aria-hidden="true">
-            <div class="recommendation-head"><span>FOR YOU</span><span>10K+ TITLES</span></div>
+            <div class="recommendation-head"><span>Similarity · schematic</span></div>
             <div class="recommendation-list">
-              <div><span>01</span><i style="--match:92%"></i><strong>92%</strong></div>
-              <div><span>02</span><i style="--match:78%"></i><strong>78%</strong></div>
-              <div><span>03</span><i style="--match:64%"></i><strong>64%</strong></div>
+              <div><i style="--match:92%"></i></div>
+              <div><i style="--match:78%"></i></div>
+              <div><i style="--match:64%"></i></div>
             </div>
-            <div class="recommendation-axis"><span>CONTENT SIMILARITY</span><span>WATCHLIST</span></div>
           </div>
           <div class="project-copy">
             <div class="project-meta"><span>RECOMMENDER SYSTEM</span><span>FULL STACK</span></div>
@@ -202,7 +226,7 @@
       </div>
     </section>
 
-    <section class="contact reveal">
+    <section class="contact reveal" id="contact">
       <p class="eyebrow">Open to ambitious research</p>
       <h2>Have a hard problem?</h2>
       <a href="mailto:dontatngo@gmail.com">Let’s make it tractable. <span>↗</span></a>
